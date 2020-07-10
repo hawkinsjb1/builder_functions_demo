@@ -60,20 +60,33 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveUtil(
-      child: ScreenSizeBuilder(
-        builder: (context, constraints, size) {
-          return Scaffold(
-            appBar: AppBar(
-              title: Text(widget.title),
-            ),
-            body: Center(
-              child: Text('I am ${size == ScreenSize.small ? 'small' : 'big'}'),
-            ),
-          );
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: BoardBuilder(
+        builder: (context, tileId) {
+          if (pieces[tileId] != null)
+            return Piece(pieces[tileId]);
+          else
+            return Container();
         },
       ),
     );
+//     return ResponsiveUtil(
+//       child: ScreenSizeBuilder(
+//         builder: (context, constraints, size) {
+//           return Scaffold(
+//             appBar: AppBar(
+//               title: Text(widget.title),
+//             ),
+//             body: Center(
+//               child: Text('I am ${size == ScreenSize.small ? 'small' : 'big'}'),
+//             ),
+//           );
+//         },
+//       ),
+//     );
   }
 }
 
