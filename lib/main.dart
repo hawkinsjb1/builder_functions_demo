@@ -73,20 +73,6 @@ class _MyHomePageState extends State<MyHomePage> {
         },
       ),
     );
-//     return ResponsiveUtil(
-//       child: ScreenSizeBuilder(
-//         builder: (context, constraints, size) {
-//           return Scaffold(
-//             appBar: AppBar(
-//               title: Text(widget.title),
-//             ),
-//             body: Center(
-//               child: Text('I am ${size == ScreenSize.small ? 'small' : 'big'}'),
-//             ),
-//           );
-//         },
-//       ),
-//     );
   }
 }
 
