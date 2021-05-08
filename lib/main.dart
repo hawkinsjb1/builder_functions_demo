@@ -1,7 +1,5 @@
-import 'package:BuilderMethods/board_builder.dart';
-import 'package:BuilderMethods/screen_size_builder.dart';
+import 'package:builder_functions_demo/board_builder.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_util/responsive_util.dart';
 
 void main() {
   runApp(MyApp());

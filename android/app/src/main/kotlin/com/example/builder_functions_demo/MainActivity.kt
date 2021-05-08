@@ -1,4 +1,4 @@
-package com.example.BuilderMethods
+package com.example.builder_functions_demo
 
 import io.flutter.embedding.android.FlutterActivity
 

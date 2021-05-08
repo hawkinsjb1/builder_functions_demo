@@ -38,7 +38,7 @@ class BoardBuilder extends StatelessWidget {
     );
   }
 
-  Map<int, String> tileLetter = {
+  final Map<int, String> tileLetter = {
     0: 'A',
     1: 'B',
     2: 'C',
